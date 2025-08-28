@@ -1,2 +1,3 @@
 # Sagnik_Roy_Wipro_Capstone_Project
-Capstone project for wipro training on JAVA Selenium
+Capstone project on nopcommerce.com
+URL: https://demo.nopcommerce.com/
