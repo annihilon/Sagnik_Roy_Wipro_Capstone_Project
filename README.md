@@ -36,4 +36,5 @@ This project involves comprehensive testing of the nopCommerce demo website, inc
 
 ## How to Run
 ```bash
+cd 'your project directory'
 mvn clean test
