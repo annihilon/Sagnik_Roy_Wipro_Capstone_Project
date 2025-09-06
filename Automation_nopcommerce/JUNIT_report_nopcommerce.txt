@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="133.354" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-09-06T04:16:29.127933600Z">
+<testcase classname="validate register page of nopcommerce" name="Enter valid credentials for registration - #1.1" time="15.108">
+<system-out><![CDATA[
+Given registration page should be open in default browser...................passed
+When in the fields enter male, John, Doe, johndoe7@gmail.com, wipro, true, john798, john798.passed
+And get registration result and get error messages if any...................passed
+And click the continue button...............................................passed
+Then registration successful and open home page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="validate login page of nopcommerce website" name="Enter valid credentials for login - #1.1" time="3.912">
+<system-out><![CDATA[
+Given login page should be open in default browser and internet connected...passed
+When in the textbox enter johndoe@gmail.com and john798.....................passed
+And Click on the true option................................................passed
+And Click on the submit/login button........................................passed
+Then login successful and you are redirected to the home page...............passed
+]]></system-out>
+</testcase>
+<testcase classname="check the response for multiple search" name="Enter data to search - #1.1" time="4.969">
+<system-out><![CDATA[
+Given home page should be open in default browser and search option visible.passed
+When in the searchbox enter the laptop and click on the search option.......passed
+Then search successful and redirected to home page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the response for multiple search" name="Enter data to search - #1.2" time="4.981">
+<system-out><![CDATA[
+Given home page should be open in default browser and search option visible.passed
+When in the searchbox enter the Apple and click on the search option........passed
+Then search successful and redirected to home page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="check the response for multiple search" name="Enter data to search - #1.3" time="4.989">
+<system-out><![CDATA[
+Given home page should be open in default browser and search option visible.passed
+When in the searchbox enter the camera and click on the search option.......passed
+Then search successful and redirected to home page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify changing address in the account section" name="Navigate to my accounts section and change the shipping address - #1.1" time="13.859">
+<system-out><![CDATA[
+Given homepage should be loaded and the myaccounts hyperlink is clearly visible.passed
+When the user logs in nopcommerce using valid johndoe@gmail.com and john798.passed
+And then navigate to my account section.....................................passed
+And click on address section and existing address edit......................passed
+And Enter Country, State, Hollywood, MidWilshire, ZipCode, Phone............passed
+And click on the Save button................................................passed
+Then Address Updation successful............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="validate if the  wishlist functionality working properly" name="Search and add products in wishlist and then move it to add to cart - #1.1" time="11.448">
+<system-out><![CDATA[
+Given home should be open and the wishlist tab should be visible properly...passed
+When click on the searcch tab and enter the product Apple Macbook Pro and click on the search button.passed
+And go to the product details and click on the wishlist tab.................passed
+And verify if the wishlist added message is displayed.......................passed
+And go to the wishlist......................................................passed
+And click on the items checkbox to be added to cart then add to cart button.passed
+Then item successfully added to cart from wishlist and add to cart is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="validate if the add to cart and delete from cart is working properly" name="Search and add to cart and then delete from cart - #1.1" time="18.144">
+<system-out><![CDATA[
+Given home should be open in default browser and search bar clearly visible to search.passed
+When log in using valid johndoe@gmail.com and john798 and navigate to the home page.passed
+And in search box enter lenovo and hit search...............................passed
+And click on the add to cart option for the item displayed and item added in cart.passed
+And navigate to cart and hit the delete button after the item...............passed
+Then item successfully deleted from cart and navigate to homepage...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Check the complete checkout flow process for nopcommerce" name="Search and add to cart and then go to checkout and complete the process - #1.1" time="22.555">
+<system-out><![CDATA[
+Given home should be open in default browser and search and add to cart is working.passed
+When log in to the website using valid johndoe@gmail.com and john798........passed
+And in search box enter the name of lenovo and click search.................passed
+And after the item displayed click on the add to cart option................passed
+And navigate to cart, click the terms and condition checkbox and the checkout button for checkout.passed
+And click on billing address continue.......................................passed
+And select ground shipping method and continue..............................passed
+And select check/money payment then continue................................passed
+And payment information verify and continue.................................passed
+And check the order details and continue....................................passed
+Then checkout successful....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check the ordered list is correctly visibl ein order section" name="Click on the orders tab in the accounts section to view my orders - #1.1" time="15.331">
+<system-out><![CDATA[
+Given home page should be opened in browser and the account section is clickable.passed
+When log-in to the website using my johndoe@gmail.com and john798 and navigate to home page.passed
+And click on the my account section at the top..............................passed
+And click on orders tab in the left.........................................passed
+And click on view details of the first order................................passed
+Then order details displayed and testcases successful.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify if the newsletter sectionn is functioning properly" name="From the homepaeg navigate to news section by scrolling down and click on a news - #1.1" time="10.913">
+<system-out><![CDATA[
+Given home page is opened and thw news section is clickable.................passed
+When First log-in with my johndoe@gmail.com and john798 and navigate back to home screen.passed
+And scroll down to find the news section and click on a news details........passed
+And at the Leave comment section add a Creating a sample comment and below add Validating the comments feature.passed
+And click on the new comment/add comment section............................passed
+Then comment displayed and task completed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check the social media icons working properly" name="Scroll to bottom and click on one of the 5 social media icons" time="6.894">
+<system-out><![CDATA[
+Given home page should be opened in browser and the scrolling function to down is working.passed
+When navigate to home page and the social media handles.....................passed
+And scroll down to bottom and click on facebook.............................passed
+Then It navigates to facebook page and validation successful................passed
+]]></system-out>
+</testcase>
+</testsuite>

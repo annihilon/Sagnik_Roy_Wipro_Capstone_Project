@@ -1,0 +1,16 @@
+========================================
+         ORDER DETAILS REPORT
+========================================
+Generated on: 2025-09-06 09:48:23
+========================================
+Order Number: ORDER #15
+Order Date: Order Date: Friday, September 5, 2025
+Order Status: Order Status: Pending
+Order Total: Order Total: $500.00
+========================================
+Page Title: nopCommerce demo store. Order Details
+Page URL: https://demo.nopcommerce.com/orderdetails/15
+========================================
+TEST RESULT: SUCCESS
+All order details were successfully displayed
+========================================
