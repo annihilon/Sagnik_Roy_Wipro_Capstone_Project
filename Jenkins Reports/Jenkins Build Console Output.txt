@@ -1,0 +1,343 @@
+Started by user Sagnik Roy
+Running as SYSTEM
+Building in workspace C:\Users\SAGNIK\.jenkins\workspace\Nopcommerce_jenkins_P1
+[Nopcommerce_jenkins_P1] $ cmd /c call C:\Users\SAGNIK\AppData\Local\Temp\jenkins4504369137158611931.bat
+
+C:\Users\SAGNIK\.jenkins\workspace\Nopcommerce_jenkins_P1>cd C:\Users\SAGNIK\OneDrive\Desktop\Codes\JAVA CODES\nopcommerce_capstone_project 
+
+C:\Users\SAGNIK\OneDrive\Desktop\Codes\JAVA CODES\nopcommerce_capstone_project>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< capstone_project:nopcommerce_capstone_project >------------
+[INFO] Building nopcommerce_capstone_project 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ nopcommerce_capstone_project ---
+[INFO] Deleting C:\Users\SAGNIK\OneDrive\Desktop\Codes\JAVA CODES\nopcommerce_capstone_project\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ nopcommerce_capstone_project ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ nopcommerce_capstone_project ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ nopcommerce_capstone_project ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 10 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ nopcommerce_capstone_project ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 12 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] /C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA CODES/nopcommerce_capstone_project/src/test/java/nopcommerce_step_defination/TestRunner.java: C:\Users\SAGNIK\OneDrive\Desktop\Codes\JAVA CODES\nopcommerce_capstone_project\src\test\java\nopcommerce_step_defination\TestRunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA CODES/nopcommerce_capstone_project/src/test/java/nopcommerce_step_defination/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ nopcommerce_capstone_project ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nopcommerce_step_defination.TestRunner
+
+Scenario: Enter valid credentials for registration                                              # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/01Register.feature:11
+Sep 06, 2025 3:59:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 3:59:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given registration page should be open in default browser                                   # nopcommerce_step_defination.Registration_steps.registration_page_should_be_open_in_default_browser()
+  ✔ When in the fields enter male, John, Doe, johndoe9@gmail.com, wipro, true, john798, john798 # nopcommerce_step_defination.Registration_steps.in_the_fields_enter_gender_fname_lname_email_cname_newsletter_pwd_cpwd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)
+  ✔ And get registration result and get error messages if any                                   # nopcommerce_step_defination.Registration_steps.get_registration_result_and_get_error_messages_if_any()
+  ✔ And click the continue button                                                               # nopcommerce_step_defination.Registration_steps.click_the_continue_button()
+Registration successful
+  ✔ Then registration successful and open home page                                             # nopcommerce_step_defination.Registration_steps.registration_successful_and_open_home_page()
+
+Scenario: Enter valid credentials for login                                   # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/02Login.feature:12
+Sep 06, 2025 3:59:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 3:59:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given login page should be open in default browser and internet connected # nopcommerce_step_defination.Login_steps.login_page_should_be_open_in_default_browser_and_internet_connected()
+  ✔ When in the textbox enter johndoe@gmail.com and john798                   # nopcommerce_step_defination.Login_steps.in_the_textbox_enter_username_and_password(java.lang.String,java.lang.String)
+  ✔ And Click on the true option                                              # nopcommerce_step_defination.Login_steps.click_on_the_remember_option(boolean)
+  ✔ And Click on the submit/login button                                      # nopcommerce_step_defination.Login_steps.click_on_the_submit_login_button()
+Login successful
+Sep 06, 2025 3:59:43 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then login successful and you are redirected to the home page             # nopcommerce_step_defination.Login_steps.login_successful_and_you_are_redirected_to_the_home_page()
+
+Scenario Outline: Enter data to search                                          # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/03Search.feature:10
+Sep 06, 2025 3:59:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 3:59:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home page should be open in default browser and search option visible # nopcommerce_step_defination.Search_steps.home_page_should_be_open_in_default_browser_and_search_option_visible()
+  ✔ When in the searchbox enter the laptop and click on the search option       # nopcommerce_step_defination.Search_steps.in_the_searchbox_enter_the_item_and_click_on_the_search_option(java.lang.String)
+Search initiated and successful
+  ✔ Then search successful and redirected to home page                          # nopcommerce_step_defination.Search_steps.search_successful_and_redirected_to_home_page()
+
+Scenario Outline: Enter data to search                                          # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/03Search.feature:11
+Sep 06, 2025 4:00:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:00:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home page should be open in default browser and search option visible # nopcommerce_step_defination.Search_steps.home_page_should_be_open_in_default_browser_and_search_option_visible()
+  ✔ When in the searchbox enter the Apple and click on the search option        # nopcommerce_step_defination.Search_steps.in_the_searchbox_enter_the_item_and_click_on_the_search_option(java.lang.String)
+Search initiated and successful
+  ✔ Then search successful and redirected to home page                          # nopcommerce_step_defination.Search_steps.search_successful_and_redirected_to_home_page()
+
+Scenario Outline: Enter data to search                                          # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/03Search.feature:12
+Sep 06, 2025 4:00:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:00:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home page should be open in default browser and search option visible # nopcommerce_step_defination.Search_steps.home_page_should_be_open_in_default_browser_and_search_option_visible()
+  ✔ When in the searchbox enter the camera and click on the search option       # nopcommerce_step_defination.Search_steps.in_the_searchbox_enter_the_item_and_click_on_the_search_option(java.lang.String)
+Search initiated and successful
+Sep 06, 2025 4:00:29 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then search successful and redirected to home page                          # nopcommerce_step_defination.Search_steps.search_successful_and_redirected_to_home_page()
+
+Scenario: Navigate to my accounts section and change the shipping address           # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/04Change_address.feature:13
+Sep 06, 2025 4:00:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:00:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given homepage should be loaded and the myaccounts hyperlink is clearly visible # nopcommerce_step_defination.Change_address_step.homepage_should_be_loaded_and_the_myaccounts_hyperlink_is_clearly_visible()
+  ✔ When the user logs in nopcommerce using valid johndoe@gmail.com and john798     # nopcommerce_step_defination.Change_address_step.the_user_logs_in_nopcommerce_using_valid_useremail_and_password(java.lang.String,java.lang.String)
+  ✔ And then navigate to my account section                                         # nopcommerce_step_defination.Change_address_step.then_navigate_to_my_account_section()
+  ✔ And click on address section and existing address edit                          # nopcommerce_step_defination.Change_address_step.click_on_address_section_and_existing_address_edit()
+  ✔ And Enter Country, State, Hollywood, MidWilshire, ZipCode, Phone                # nopcommerce_step_defination.Change_address_step.enter_country_state_city_address1_zip_code_phone(java.lang.String,java.lang.String)
+  ✔ And click on the Save button                                                    # nopcommerce_step_defination.Change_address_step.click_on_the_save_button()
+Success message: The address has been updated successfully.
+User address changed successfully
+Sep 06, 2025 4:00:54 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then Address Updation successful                                                # nopcommerce_step_defination.Change_address_step.address_updation_successful()
+
+Scenario: Search and add products in wishlist and then move it to add to cart                            # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/05Wishlist.feature:14
+Sep 06, 2025 4:01:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:01:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home should be open and the wishlist tab should be visible properly                            # nopcommerce_step_defination.Wishlist_steps.home_should_be_open_and_the_wishlist_tab_should_be_visible_properly()
+  ✔ When click on the searcch tab and enter the product Apple Macbook Pro and click on the search button # nopcommerce_step_defination.Wishlist_steps.click_on_the_searcch_tab_and_enter_the_product_itemname_and_click_on_the_search_button(java.lang.String)
+  ✔ And go to the product details and click on the wishlist tab                                          # nopcommerce_step_defination.Wishlist_steps.go_to_the_product_details_and_click_on_the_wishlist_tab()
+  ✔ And verify if the wishlist added message is displayed                                                # nopcommerce_step_defination.Wishlist_steps.verify_if_the_wishlist_added_message_is_displayed()
+  ✔ And go to the wishlist                                                                               # nopcommerce_step_defination.Wishlist_steps.go_to_the_wishlist()
+  ✔ And click on the items checkbox to be added to cart then add to cart button                          # nopcommerce_step_defination.Wishlist_steps.click_on_the_items_checkbox_to_be_added_to_cart_then_add_to_cart_button()
+Cart page title verified: nopCommerce demo store. Shopping Cart
+Item successfully added to cart from wishlist
+Sep 06, 2025 4:01:14 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then item successfully added to cart from wishlist and add to cart is displayed                      # nopcommerce_step_defination.Wishlist_steps.item_successfully_added_to_cart_from_wishlist_and_add_to_cart_is_displayed()
+
+Scenario: Search and add to cart and then delete from cart                                # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/06Cart.feature:13
+Sep 06, 2025 4:01:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:01:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home should be open in default browser and search bar clearly visible to search # nopcommerce_step_defination.Cart_steps.home_should_be_open_in_default_browser_and_search_bar_clearly_visible_to_search()
+  ✔ When log in using valid johndoe@gmail.com and john798 and navigate to the home page   # nopcommerce_step_defination.Cart_steps.log_in_using_valid_useremail_and_password_and_navigate_to_the_home_page(java.lang.String,java.lang.String)
+  ✔ And in search box enter lenovo and hit search                                         # nopcommerce_step_defination.Cart_steps.in_search_box_enter_item1_and_hit_search(java.lang.String)
+  ✔ And click on the add to cart option for the item displayed and item added in cart     # nopcommerce_step_defination.Cart_steps.click_on_the_add_to_cart_option_for_the_item_displayed_and_item_added_in_cart()
+  ✔ And navigate to cart and hit the delete button after the item                         # nopcommerce_step_defination.Cart_steps.navigate_to_cart_and_hit_the_delete_button_after_the_item()
+Deleted from cart successful
+  ✔ Then item successfully deleted from cart and navigate to homepage                     # nopcommerce_step_defination.Cart_steps.item_successfully_deleted_from_cart_and_navigate_to_homepage()
+
+Scenario: Search and add to cart and then go to checkout and complete the process                     # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/07Checkout.feature:18
+Sep 06, 2025 4:01:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:01:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home should be open in default browser and search and add to cart is working                # nopcommerce_step_defination.Checkout_steps.home_should_be_open_in_default_browser_and_search_and_add_to_cart_is_working()
+  ✔ When log in to the website using valid johndoe@gmail.com and john798                              # nopcommerce_step_defination.Checkout_steps.log_in_to_the_website_using_valid_useremail_and_password(java.lang.String,java.lang.String)
+  ✔ And in search box enter the name of lenovo and click search                                       # nopcommerce_step_defination.Checkout_steps.in_search_box_enter_the_name_of_item_and_click_search(java.lang.String)
+  ✔ And after the item displayed click on the add to cart option                                      # nopcommerce_step_defination.Checkout_steps.after_the_item_displayed_click_on_the_add_to_cart_option()
+  ✔ And navigate to cart, click the terms and condition checkbox and the checkout button for checkout # nopcommerce_step_defination.Checkout_steps.navigate_to_cart_click_the_terms_and_condition_checkbox_and_the_checkout_button_for_checkout()
+  ✔ And click on billing address continue                                                             # nopcommerce_step_defination.Checkout_steps.click_on_billing_address_continue()
+  ✔ And select ground shipping method and continue                                                    # nopcommerce_step_defination.Checkout_steps.select_ground_shipping_method_and_continue()
+  ✔ And select check/money payment then continue                                                      # nopcommerce_step_defination.Checkout_steps.select_check_money_payment_then_continue()
+  ✔ And payment information verify and continue                                                       # nopcommerce_step_defination.Checkout_steps.payment_information_verify_and_continue()
+  ✔ And check the order details and continue                                                          # nopcommerce_step_defination.Checkout_steps.check_the_order_details_and_continue()
+Checkout successful
+Sep 06, 2025 4:02:20 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then checkout successful                                                                          # nopcommerce_step_defination.Checkout_steps.checkout_successful()
+
+Scenario: Click on the orders tab in the accounts section to view my orders                     # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/08Orders.feature:13
+Sep 06, 2025 4:02:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:02:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home page should be opened in browser and the account section is clickable            # nopcommerce_step_defination.Orders_steps.home_page_should_be_opened_in_browser_and_the_account_section_is_clickable()
+  ✔ When log-in to the website using my johndoe@gmail.com and john798 and navigate to home page # nopcommerce_step_defination.Orders_steps.log_in_to_the_website_using_my_useremail_and_password_and_navigate_to_home_page(java.lang.String,java.lang.String)
+  ✔ And click on the my account section at the top                                              # nopcommerce_step_defination.Orders_steps.click_on_the_my_account_section_at_the_top()
+  ✔ And click on orders tab in the left                                                         # nopcommerce_step_defination.Orders_steps.click_on_orders_tab_in_the_left()
+  ✔ And click on view details of the first order                                                # nopcommerce_step_defination.Orders_steps.click_on_view_details_of_the_first_order()
+Order details written to file: order_details_20250906_160246.txt
+Order details successfully displayed and saved to file
+Sep 06, 2025 4:02:46 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then order details displayed and testcases successful                                       # nopcommerce_step_defination.Orders_steps.order_details_displayed_and_testcases_successful()
+
+Scenario: From the homepaeg navigate to news section by scrolling down and click on a news                         # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/09News.feature:13
+Sep 06, 2025 4:02:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:02:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home page is opened and thw news section is clickable                                                    # nopcommerce_step_defination.News_steps.home_page_is_opened_and_thw_news_section_is_clickable()
+  ✔ When First log-in with my johndoe@gmail.com and john798 and navigate back to home screen                       # nopcommerce_step_defination.News_steps.first_log_in_with_my_useremail_and_password_and_navigate_back_to_home_screen(java.lang.String,java.lang.String)
+  ✔ And scroll down to find the news section and click on a news details                                           # nopcommerce_step_defination.News_steps.scroll_down_to_find_the_news_section_and_click_on_a_news_details()
+  ✔ And at the Leave comment section add a Creating a sample comment and below add Validating the comments feature # nopcommerce_step_defination.News_steps.at_the_leave_comment_section_add_a_title_and_below_add_comments(java.lang.String,java.lang.String)
+  ✔ And click on the new comment/add comment section                                                               # nopcommerce_step_defination.News_steps.click_on_the_new_comment_add_comment_section()
+News Verification successful
+Sep 06, 2025 4:03:04 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then comment displayed and task completed                                                                      # nopcommerce_step_defination.News_steps.comment_displayed_and_task_completed()
+
+Scenario: Scroll to bottom and click on one of the 5 social media icons                       # file:///C:/Users/SAGNIK/OneDrive/Desktop/Codes/JAVA%20CODES/nopcommerce_capstone_project/src/test/resources/nopcommerce_features/Social_media.feature:2
+Sep 06, 2025 4:03:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 4:03:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given home page should be opened in browser and the scrolling function to down is working # nopcommerce_step_defination.Social_media_steps.home_page_should_be_opened_in_browser_and_the_scrolling_function_to_down_is_working()
+  ✔ When navigate to home page and the social media handles                                   # nopcommerce_step_defination.Social_media_steps.navigate_to_home_page_and_the_social_media_handles()
+  ✔ And scroll down to bottom and click on facebook                                           # nopcommerce_step_defination.Social_media_steps.scroll_down_to_bottom_and_click_on_facebook()
+Facebook link clicked - external navigation validated
+  ✔ Then It navigates to facebook page and validation successful                              # nopcommerce_step_defination.Social_media_steps.it_navigates_to_facebook_page_and_validation_successful()
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 262.0 s -- in nopcommerce_step_defination.TestRunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:27 min
+[INFO] Finished at: 2025-09-06T16:03:20+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
